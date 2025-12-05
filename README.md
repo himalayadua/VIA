@@ -290,52 +290,6 @@ ViaCanvas/
 
 ---
 
-## 🗺️ Roadmap
-
-### ✅ Phase 1: Foundation (Complete)
-- Multiple card types
-- Auto-layout algorithms
-- Context menus & keyboard shortcuts
-- Search functionality
-- Chat sidebar with AI
-
-### ✅ Phase 2: Intelligence (Complete)
-- Smart URL extraction
-- AI-powered "Grow" feature
-- Intelligent card placement
-- Automatic categorization
-- Background intelligence agent
-
-### 🚧 Phase 3: Advanced (In Progress)
-- Multi-threaded conversations
-- Knowledge base with RAG
-- Code artifact generation
-- Enhanced citations
-- Workflow automation
-
-### 🔮 Phase 4: Collaboration (Planned)
-- Real-time collaboration
-- Shared canvases
-- Team workspaces
-- Version control
-- Export to multiple formats
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
@@ -357,14 +311,3 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 **Project Status**: Beta (Functional MVP)  
 **Looking For**: Contributors, Early Adopters, Feedback
 
----
-
-## 🌟 Star History
-
-If you find Via Canvas useful, please consider giving it a star! ⭐
-
----
-
-*"The best way to predict the future is to invent it." — Alan Kay*
-
-**Let's build the future of knowledge work together.**
