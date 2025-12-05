@@ -33,6 +33,13 @@ Via Canvas is an intelligent workspace that transforms how you capture, organize
 
 *Visualize your knowledge evolution over time with the temporal timeline view*
 
+---
+
+### AI-Powered "Grow" Feature
+<img src="images/via-grow.png" alt="Via Grow - AI extracts key concepts and creates connected child cards" style="border: 2px solid #333; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" width="800"/>
+
+*Right-click any card and select "Grow" to have AI extract key concepts and create connected child cards*
+
 </div>
 
 ---
