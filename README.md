@@ -22,7 +22,7 @@ Via Canvas is an intelligent workspace that transforms how you capture, organize
 ---
 
 ### Infinite Canvas with AI Chat
-<img src="images/via-canvas.png" alt="Via Canvas - AI-powered infinite canvas with chat sidebar" style="border: 2px solid #333; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" width="800"/>
+<img src="images/via-canvas-kiro.png" alt="Via Canvas - AI-powered infinite canvas with chat sidebar" style="border: 2px solid #333; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" width="800"/>
 
 *Chat with AI to create cards, extract URLs, and organize knowledge automatically*
 
@@ -39,6 +39,13 @@ Via Canvas is an intelligent workspace that transforms how you capture, organize
 <img src="images/via-grow.png" alt="Via Grow - AI extracts key concepts and creates connected child cards" style="border: 2px solid #333; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" width="800"/>
 
 *Right-click any card and select "Grow" to have AI extract key concepts and create connected child cards*
+
+---
+
+### Configurable LLM Settings
+<img src="images/via-config-llm.png" alt="Via LLM Configuration - Configure your own API keys and model settings" style="border: 2px solid #333; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" width="800"/>
+
+*Configure your own API keys, choose different LLM providers, and customize model parameters*
 
 </div>
 
