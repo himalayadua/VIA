@@ -1,0 +1,24 @@
+{
+  "url": "https://opensource.org/licenses",
+  "cached_at": "2025-12-05T11:47:10.417437",
+  "expires_at": "2025-12-06T11:47:10.417441",
+  "data": {
+    "card_type": "link",
+    "title": "OSI Approved Licenses",
+    "description": "OSI Approved Licenses Open source licenses are licenses that comply with the Open Source Definition \u2013 in brief, they allow software to be freely used, modified, and shared. To be\u2026",
+    "sections": [
+      {
+        "title": "Search Licenses",
+        "content": "You've searched for: \u2018\u2019clear search",
+        "level": 2
+      }
+    ],
+    "code_blocks": [],
+    "metadata": {
+      "url": "https://opensource.org/licenses",
+      "hostname": "opensource.org",
+      "scheme": "https",
+      "type": "generic"
+    }
+  }
+}

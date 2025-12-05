@@ -1,0 +1,58 @@
+# FastAPI and server
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Strands AI framework
+strands-agents 
+strands-agents-tools
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+opentelemetry-instrumentation-threading>=0.51b0,<1.00b0
+boto3>=1.26.0,<2.0.0
+botocore>=1.29.0,<2.0.0
+docstring-parser>=0.15,<1.0
+jsonschema>=4.0.0,<5.0.0
+mcp>=1.11.0,<2.0.0
+watchdog>=6.0.0,<7.0.0
+openai
+sniffio>=1.3.0  # Required by openai
+distro>=1.7.0,<2.0.0  # Required by openai
+jiter>=0.10.0,<1.0.0  # Required by openai
+youtube_transcript_api
+defusedxml>=0.7.1  # Required by youtube_transcript_api
+networkx
+numpy
+
+# Database
+psycopg2-binary==2.9.9
+
+# Utilities
+python-dotenv==1.0.0
+pydantic>=2.12.0  # Python 3.14 support
+pydantic-settings>=2.6.0  # Compatible with pydantic 2.12+
+
+# Optional: Logging and monitoring
+python-json-logger==2.0.7
+
+# Academic paper search (for learning tools)
+arxiv>=2.0.0
+
+# Enhanced Content Extraction (Free Tools)
+trafilatura>=1.6.0  # Fast content extraction
+playwright>=1.40.0  # JavaScript rendering
+readability-lxml>=0.8.1  # Mozilla Readability algorithm
+newspaper3k>=0.2.8  # Article extraction
+beautifulsoup4>=4.12.0  # HTML parsing (already used)
+lxml>=4.9.0  # XML/HTML parser
+requests>=2.31.0  # HTTP client (already used)
+
+# MarkItDown-inspired features
+pymupdf>=1.23.0  # Fast PDF extraction (better than pdfminer)
+Pillow>=10.0.0  # Image processing
+pytesseract>=0.3.10  # OCR for images
+
+# Knowledge Base / RAG
+qdrant-client>=1.7.0  # Vector database client
+sentence-transformers>=2.2.0  # Embeddings (already used in graph module)
+

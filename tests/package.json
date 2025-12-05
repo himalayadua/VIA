@@ -1,0 +1,16 @@
+{
+  "name": "chat-sidebar-tests",
+  "version": "1.0.0",
+  "description": "Test suite for chat sidebar feature",
+  "scripts": {
+    "test:python": "cd ../chat_service && python -m pytest ../tests/backend/python/ -v",
+    "test:express": "mocha tests/backend/express/**/*.js",
+    "test:frontend": "vitest run tests/frontend/",
+    "test:all": "npm run test:python && npm run test:express && npm run test:frontend"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.10",
+    "sinon": "^17.0.1"
+  }
+}

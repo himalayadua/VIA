@@ -1,0 +1,82 @@
+/**
+ * Card Reference Styles
+ * 
+ * Styles for card reference highlighting and animations
+ */
+
+/* Card reference highlight animation */
+@keyframes cardReferenceHighlight {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.3);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    transform: scale(1);
+  }
+}
+
+.card-reference-highlight {
+  animation: cardReferenceHighlight 2s ease-out;
+  border-color: rgb(59, 130, 246) !important;
+  z-index: 10;
+}
+
+/* Canvas-aware message indicator */
+.canvas-aware-message {
+  position: relative;
+}
+
+.canvas-aware-message::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, rgb(59, 130, 246), rgb(147, 51, 234));
+  border-radius: 2px;
+}
+
+/* Card reference badge in messages */
+.card-reference-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  font-size: 11px;
+  color: rgb(96, 165, 250);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.card-reference-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* AI insight indicator */
+.ai-insight-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: rgba(147, 51, 234, 0.1);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  border-radius: 6px;
+  font-size: 11px;
+  color: rgb(192, 132, 252);
+  margin-bottom: 8px;
+}
+
+.ai-insight-indicator svg {
+  width: 14px;
+  height: 14px;
+}

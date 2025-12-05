@@ -1,0 +1,87 @@
+/* Conflict Detection Animations */
+
+/* Pulse animation for conflict badges */
+@keyframes conflict-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(234, 179, 8, 0);
+    transform: scale(1.05);
+  }
+}
+
+/* Glow animation for conflicting cards */
+@keyframes conflict-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.6), 0 0 30px rgba(234, 179, 8, 0.4);
+  }
+}
+
+/* Shake animation for new conflicts */
+@keyframes conflict-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px);
+  }
+}
+
+/* Border pulse for conflicting cards */
+@keyframes conflict-border-pulse {
+  0%, 100% {
+    border-color: rgba(234, 179, 8, 0.5);
+  }
+  50% {
+    border-color: rgba(234, 179, 8, 1);
+  }
+}
+
+/* Animation classes */
+.conflict-pulse {
+  animation: conflict-pulse 2s ease-in-out infinite;
+}
+
+.conflict-glow {
+  animation: conflict-glow 2s ease-in-out infinite;
+}
+
+.conflict-shake {
+  animation: conflict-shake 0.5s ease-in-out;
+}
+
+.conflict-border-pulse {
+  animation: conflict-border-pulse 2s ease-in-out infinite;
+}
+
+/* Conflict card highlight */
+.conflict-card {
+  border: 2px solid rgba(234, 179, 8, 0.6) !important;
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.3) !important;
+}
+
+/* New conflict indicator */
+.conflict-new {
+  position: relative;
+}
+
+.conflict-new::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  background: #ef4444;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: conflict-pulse 2s ease-in-out infinite;
+}

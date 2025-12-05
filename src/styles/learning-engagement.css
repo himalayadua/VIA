@@ -1,0 +1,219 @@
+/**
+ * Learning Engagement Styles
+ * 
+ * Styles for engagement tracking and learning cluster visualization
+ */
+
+/* Card type icons */
+.node-icon {
+  font-size: 16px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* Importance badge */
+.importance-badge {
+  font-size: 14px;
+  margin-left: 4px;
+  filter: drop-shadow(0 0 2px rgba(255, 193, 7, 0.5));
+}
+
+/* Read indicator */
+.read-badge {
+  font-size: 12px;
+  margin-left: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+/* Learning cluster cards */
+.learning-cluster-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.learning-cluster-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none;
+  opacity: 0;
+  animation: cluster-shimmer 2s ease-in-out;
+}
+
+@keyframes cluster-shimmer {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Unread card (subtle fade) */
+.base-node[data-read-count="0"] {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+/* Read card (full opacity) */
+.base-node[data-read-count]:not([data-read-count="0"]) {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Highly engaged cards get subtle glow */
+.base-node[data-read-count]:not([data-read-count="0"]):not([data-read-count="1"]):not([data-read-count="2"]) {
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.2);
+}
+
+/* Edge animations */
+.react-flow__edge-path {
+  transition: stroke-width 0.3s ease, stroke 0.3s ease, stroke-opacity 0.3s ease;
+}
+
+/* Engagement level indicators */
+.engagement-level-1 { stroke-width: 1px; }
+.engagement-level-2 { stroke-width: 2px; }
+.engagement-level-3 { stroke-width: 3px; }
+.engagement-level-4 { stroke-width: 4px; }
+.engagement-level-5 { stroke-width: 5px; }
+.engagement-level-6 { stroke-width: 6px; }
+
+/* Card hover effects for engagement */
+.base-node:hover .read-badge {
+  opacity: 1;
+}
+
+.base-node:hover .importance-badge {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Read count display */
+.read-count-display {
+  font-size: 10px;
+  color: #64748B;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.base-node:hover .read-count-display {
+  color: #3B82F6;
+}
+
+/* Comprehensive learning cluster effects */
+.comprehensive-learning-active {
+  animation: comprehensive-pulse 3s ease-in-out infinite;
+}
+
+@keyframes comprehensive-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
+  }
+}
+
+/* Neural pathway visualization */
+.neural-pathway-weak {
+  stroke-dasharray: 5, 5;
+  animation: neural-flow 2s linear infinite;
+}
+
+.neural-pathway-strong {
+  filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.3));
+}
+
+@keyframes neural-flow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 10; }
+}
+
+/* Card type specific styling */
+.card-type-question {
+  border-left: 4px solid #A78BFA;
+}
+
+.card-type-todo {
+  border-left: 4px solid #34D399;
+}
+
+.card-type-reminder {
+  border-left: 4px solid #FCD34D;
+}
+
+.card-type-person {
+  border-left: 4px solid #60A5FA;
+}
+
+.card-type-concept {
+  border-left: 4px solid #F472B6;
+}
+
+.card-type-technique {
+  border-left: 4px solid #FB923C;
+}
+
+.card-type-contradiction {
+  border-left: 4px solid #EF4444;
+}
+
+.card-type-example {
+  border-left: 4px solid #10B981;
+}
+
+.card-type-challenge {
+  border-left: 4px solid #8B5CF6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .node-icon {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  
+  .importance-badge {
+    font-size: 12px;
+  }
+  
+  .read-badge {
+    font-size: 10px;
+  }
+  
+  .read-count-display {
+    font-size: 9px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .learning-cluster-card::after,
+  .comprehensive-learning-active,
+  .neural-pathway-weak {
+    animation: none;
+  }
+  
+  .base-node,
+  .react-flow__edge-path,
+  .read-badge,
+  .importance-badge {
+    transition: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .base-node[data-read-count="0"] {
+    opacity: 0.7;
+  }
+  
+  .read-badge {
+    opacity: 1;
+  }
+  
+  .learning-cluster-card {
+    border-width: 4px !important;
+  }
+}
